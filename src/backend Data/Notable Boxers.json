@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Azumah Nelson",
+        "picture": "azumah_nelson.jpg",
+        "biography": "Azumah Nelson is a Ghanaian former professional boxer who competed from 1979 to 2008. He is considered one of the greatest African boxers of all time. Nelson held the WBC featherweight title from 1984 to 1987 and the WBC super featherweight title twice between 1988 and 1997. Known for his exceptional skill and toughness, Nelson earned the nickname 'The Professor.'",
+        "notable_games": [
+            {
+                "opponent": "Wilfredo Gómez",
+                "event": "WBC Featherweight Championship",
+                "outcome": "Won by TKO"
+            },
+            {
+                "opponent": "Jeff Fenech",
+                "event": "WBC Super Featherweight Championship",
+                "outcome": "Won by decision"
+            },
+            {
+                "opponent": "Jesse James Leija",
+                "event": "WBC Super Featherweight Championship",
+                "outcome": "Won by decision"
+            }
+        ]
+    },
+    {
+        "name": "Dick Tiger",
+        "picture": "dick_tiger.jpg",
+        "biography": "Dick Tiger, born Richard Ihetu, was a Nigerian professional boxer who competed from 1952 to 1970. He was a two-weight world champion, holding the undisputed middleweight title and the light heavyweight title. Tiger was known for his toughness, ring intelligence, and ability to adapt his style to outsmart opponents.",
+        "notable_games": [
+            {
+                "opponent": "Gene Fullmer",
+                "event": "Middleweight Championship",
+                "outcome": "Won by decision"
+            },
+            {
+                "opponent": "Joey Giardello",
+                "event": "Middleweight Championship",
+                "outcome": "Won by decision"
+            },
+            {
+                "opponent": "José Torres",
+                "event": "Light Heavyweight Championship",
+                "outcome": "Won by decision"
+            }
+        ]
+    }
+]

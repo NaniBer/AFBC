@@ -1,0 +1,26 @@
+[
+    {
+        "category": "Amateur Boxing Tournament",
+        "date": "2024-03-15",
+        "title": "AFBC Youth Boxing Championship",
+        "place": "Accra, Ghana"
+    },
+    {
+        "category": "Professional Boxing Match",
+        "date": "2024-04-20",
+        "title": "Africa Boxing Federation Title Fight",
+        "place": "Johannesburg, South Africa"
+    },
+    {
+        "category": "Training Camp",
+        "date": "2024-05-10",
+        "title": "Elite Boxers Training Camp",
+        "place": "Nairobi, Kenya"
+    },
+    {
+        "category": "Boxing Seminar",
+        "date": "2024-06-05",
+        "title": "Coaching and Officiating Workshop",
+        "place": "Dakar, Senegal"
+    }
+]

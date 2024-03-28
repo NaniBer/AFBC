@@ -1,0 +1,66 @@
+[
+  {
+    "description": "AFBC Youth Boxing Championship 2024",
+    "location": "Accra Sports Stadium, Accra, Ghana",
+    "date": "2024-03-15",
+    "time": "10:00 AM - 4:00 PM",
+    "matchups": [
+      {
+        "fighters": ["John Doe", "Jane Smith"],
+        "winner": "John Doe"
+      },
+      {
+        "fighters": ["Mike Johnson", "Sarah Lee"],
+        "winner": "Sarah Lee"
+      },
+      {
+        "fighters": ["David Brown", "Emily White"],
+        "winner": "David Brown"
+      }
+    ]
+  },
+  {
+    "description": "Africa Boxing Federation Title Fight 2024",
+    "location": "Johannesburg Indoor Arena, Johannesburg, South Africa",
+    "date": "2024-04-20",
+    "time": "7:00 PM - 11:00 PM",
+    "matchups": [
+      {
+        "fighters": ["Anthony Jackson", "Michael Garcia"],
+        "winner": "Anthony Jackson"
+      }
+    ]
+  },
+  {
+    "description": "East Africa Boxing Invitational 2024",
+    "location": "Kasarani Indoor Arena, Nairobi, Kenya",
+    "date": "2024-05-05",
+    "time": "12:00 PM - 6:00 PM",
+    "matchups": [
+      {
+        "fighters": ["James Smith", "Emma Johnson"],
+        "winner": "James Smith"
+      },
+      {
+        "fighters": ["Daniel Kimani", "Grace Wangari"],
+        "winner": "Daniel Kimani"
+      }
+    ]
+  },
+  {
+    "description": "West African Boxing Challenge 2024",
+    "location": "Stade Léopold Sédar Senghor, Dakar, Senegal",
+    "date": "2024-06-10",
+    "time": "2:00 PM - 8:00 PM",
+    "matchups": [
+      {
+        "fighters": ["Mohammed Toure", "Fatoumata Diop"],
+        "winner": "Fatoumata Diop"
+      },
+      {
+        "fighters": ["Abdoulaye Diallo", "Aminata Traoré"],
+        "winner": "Abdoulaye Diallo"
+      }
+    ]
+  }
+]
