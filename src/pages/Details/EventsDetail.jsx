@@ -1,4 +1,4 @@
-import EventData from "../backend Data/Events.json";
+import EventData from "../../backend Data/Events.json";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import {
@@ -12,38 +12,31 @@ import {
   Button,
 } from "reactstrap";
 
-const Event = () => {
+const EventsDetails = () => {
   const [data, setData] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   useEffect(() => {
     setData(EventData);
   }, []);
+
   const categories = [
     ...new Set(data ? data.map((event) => event.category) : []),
   ];
+
   const filterEventsByCategory = (category) => {
     setSelectedCategory(category);
   };
-  const currentDate = new Date();
-
-  const upcomingEvents = data
-    ? data.filter((event) => new Date(event.date) >= currentDate)
-    : [];
-
-  const firstFiveUpcomingEvents = upcomingEvents.slice(0, 5);
 
   const filteredData = selectedCategory
-    ? firstFiveUpcomingEvents.filter(
-        (event) => event.category === selectedCategory
-      )
-    : firstFiveUpcomingEvents;
+    ? data.filter((event) => event.category === selectedCategory)
+    : data;
 
   return (
     <div className="section section-buttons" id="Events">
       <Container>
         <div className="title text-center mb-5">
-          <h2 className="font-weight-semibold">Events</h2>
+          <h2 className="font-weight-semibold">Events Details</h2>
         </div>
         {/* Filter buttons */}
         <div className="text-center mb-4">
@@ -70,7 +63,7 @@ const Event = () => {
 
         {filteredData &&
           filteredData.map((event, index) => (
-            <Card key={index} className="mb-4">
+            <div key={index} className="mb-4">
               <CardBody>
                 <Row>
                   <Col className="d-flex align-items-center">
@@ -81,16 +74,17 @@ const Event = () => {
                     <CardTitle tag="h5" className="mb-1">
                       {event.title}
                     </CardTitle>
-                    <CardText className="mb-0">{event.place}</CardText>
+                    <CardText className="mb-1">{event.place}</CardText>
+                    <CardText className="mb-0">{event.description}</CardText>
                   </Col>
                 </Row>
               </CardBody>
-            </Card>
+            </div>
           ))}
-        {/* See More button */}
-        <div className="text-center">
-          <Link to="/eventsDetails">
-            <Button color="primary">See More</Button>
+
+        <div className="text-center mt-4">
+          <Link to="/">
+            <Button color="secondary">Back to Events</Button>
           </Link>
         </div>
       </Container>
@@ -104,4 +98,4 @@ const Event = () => {
   );
 };
 
-export default Event;
+export default EventsDetails;

@@ -3,17 +3,11 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { Button, Container, Row, Col } from "reactstrap";
 import newsData from "../backend Data/News.json";
 
-const NewsContent = () => {
+const AllNews = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // Sort newsData by date in descending order
-    const sortedData = newsData.sort(
-      (a, b) => new Date(b.date) - new Date(a.date)
-    );
-    // Select the first 5 news items
-    const firstFiveNews = sortedData.slice(0, 5);
-    setData(firstFiveNews);
+    setData(newsData);
   }, []); // Empty dependency array to ensure useEffect runs only once
 
   return (
@@ -53,9 +47,9 @@ const NewsContent = () => {
                     </Col>
                   ))}
                 </div>
-                <div className="text-center">
-                  <Link to="/allNews">
-                    <Button color="primary">See More</Button>
+                <div className="text-center mt-4">
+                  <Link to="/">
+                    <Button color="secondary">Back to Homepage</Button>
                   </Link>
                 </div>
               </Col>
@@ -67,4 +61,4 @@ const NewsContent = () => {
   );
 };
 
-export default NewsContent;
+export default AllNews;

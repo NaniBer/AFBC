@@ -1,3 +1,4 @@
+import ResultData from "../../backend Data/Results.json";
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCrown } from "@fortawesome/free-solid-svg-icons";
@@ -10,10 +11,10 @@ import {
   Button,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import ResultData from "../backend Data/Results.json";
 
-const Result = () => {
+const ResultsDetails = () => {
   const [data, setData] = useState([]);
+  const [showAll, setShowAll] = useState(true); // Set to true to display all results
 
   useEffect(() => {
     // Sort results by date in descending order
@@ -23,14 +24,18 @@ const Result = () => {
     setData(sortedData);
   }, []);
 
+  // Function to toggle between showing all results and showing only the latest 5
+  const toggleShowAll = () => {
+    setShowAll(!showAll);
+  };
+
   return (
     <div className="section section-buttons" id="Results">
       <Container>
         <div className="title text-center mb-5">
           <h2 className="font-weight-semibold">Results</h2>
         </div>
-        {/* Display only the latest 5 results */}
-        {data.slice(0, 5).map((result, index) => (
+        {data.map((result, index) => (
           <Card key={index} className="mb-4">
             <CardBody>
               <CardTitle tag="h5">{result.description}</CardTitle>
@@ -73,14 +78,13 @@ const Result = () => {
             </CardBody>
           </Card>
         ))}
-        {/* Show the "See More" button */}
-        {data.length > 5 && (
-          <div className="text-center">
-            <Link to="/resultsDetails">
-              <Button color="primary">See More</Button>
-            </Link>
-          </div>
-        )}
+
+        {/* Go back to home page button */}
+        <div className="text-center mt-3">
+          <Link to="/">
+            <Button color="secondary">Go Back to Home Page</Button>
+          </Link>
+        </div>
       </Container>
       <div
         className="hr-container"
@@ -95,4 +99,4 @@ const Result = () => {
   );
 };
 
-export default Result;
+export default ResultsDetails;

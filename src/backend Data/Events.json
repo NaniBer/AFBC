@@ -1,26 +1,93 @@
 [
-    {
-        "category": "Amateur Boxing Tournament",
-        "date": "2024-03-15",
-        "title": "AFBC Youth Boxing Championship",
-        "place": "Accra, Ghana"
-    },
-    {
-        "category": "Professional Boxing Match",
-        "date": "2024-04-20",
-        "title": "Africa Boxing Federation Title Fight",
-        "place": "Johannesburg, South Africa"
-    },
-    {
-        "category": "Training Camp",
-        "date": "2024-05-10",
-        "title": "Elite Boxers Training Camp",
-        "place": "Nairobi, Kenya"
-    },
-    {
-        "category": "Boxing Seminar",
-        "date": "2024-06-05",
-        "title": "Coaching and Officiating Workshop",
-        "place": "Dakar, Senegal"
-    }
+  {
+    "category": "Amateur Boxing Tournament",
+    "date": "2024-03-15",
+    "title": "AFBC Youth Boxing Championship",
+    "place": "Accra, Ghana",
+    "description": "The AFBC Youth Boxing Championship gathers talented young boxers from across Africa to compete in various weight categories and showcase their skills."
+  },
+  {
+    "category": "Professional Boxing Match",
+    "date": "2024-04-20",
+    "title": "Africa Boxing Federation Title Fight",
+    "place": "Johannesburg, South Africa",
+    "description": "Witness the clash of titans as the top contenders battle it out for the prestigious Africa Boxing Federation Title in a thrilling night of professional boxing."
+  },
+  {
+    "category": "Training Camp",
+    "date": "2024-05-10",
+    "title": "Elite Boxers Training Camp",
+    "place": "Nairobi, Kenya",
+    "description": "Join elite boxers from around the globe as they participate in an intensive training camp aimed at refining their techniques and enhancing their physical conditioning."
+  },
+  {
+    "category": "Boxing Seminar",
+    "date": "2024-06-05",
+    "title": "Coaching and Officiating Workshop",
+    "place": "Dakar, Senegal",
+    "description": "Learn from seasoned boxing coaches and officials in this comprehensive workshop focused on coaching methodologies, officiating standards, and rules interpretation."
+  },
+  {
+    "category": "Community Boxing Event",
+    "date": "2024-07-15",
+    "title": "Youth Development Boxing Program",
+    "place": "Lagos, Nigeria",
+    "description": "Engage in a community-driven initiative aimed at promoting youth development through the sport of boxing. Witness the talent and determination of young boxers as they compete for glory."
+  },
+  {
+    "category": "Amateur Boxing Tournament",
+    "date": "2024-08-20",
+    "title": "Regional Amateur Boxing Championship",
+    "place": "Nairobi, Kenya",
+    "description": "Experience the excitement of amateur boxing at its finest as regional champions converge to compete for the coveted title of Regional Amateur Boxing Champion."
+  },
+  {
+    "category": "Boxing Exhibition",
+    "date": "2024-08-20",
+    "title": "Legends of the Ring Showcase",
+    "place": "Cairo, Egypt",
+    "description": "Relive the glory days of boxing as legendary fighters showcase their skills in an unforgettable exhibition event, paying homage to the sport's iconic figures."
+  },
+  {
+    "category": "Professional Boxing Match",
+    "date": "2024-09-25",
+    "title": "World Championship Title Fight",
+    "place": "Las Vegas, USA",
+    "description": "Prepare for an electrifying showdown as the world's best boxers collide in a battle for supremacy, vying for the ultimate prize in professional boxing, the World Championship Title."
+  },
+  {
+    "category": "Training Camp",
+    "date": "2024-10-10",
+    "title": "Technical Skills Development Clinic",
+    "place": "Abuja, Nigeria",
+    "description": "Sharpen your technical skills and tactical understanding under the guidance of renowned boxing trainers and experts at this specialized skills development clinic."
+  },
+  {
+    "category": "Community Boxing Event",
+    "date": "2024-11-05",
+    "title": "West African Boxing Invitational",
+    "place": "Dakar, Senegal",
+    "description": "Celebrate the rich boxing heritage of West Africa in this invitational event featuring top boxers from the region. Experience the camaraderie and sportsmanship that define West African boxing culture."
+  },
+  {
+    "category": "Professional Boxing Match",
+    "date": "2024-12-15",
+    "title": "Holiday Boxing Spectacular",
+    "place": "New York City, USA",
+    "description": "Experience the thrill of holiday boxing as top-ranked fighters face off in a spectacular event filled with high-stakes matchups and festive atmosphere."
+  },
+  {
+    "category": "Amateur Boxing Tournament",
+    "date": "2025-01-20",
+    "title": "International Youth Boxing Challenge",
+    "place": "London, United Kingdom",
+    "description": "Witness the future stars of amateur boxing compete on the international stage in this youth boxing challenge, showcasing the talent and determination of young athletes from around the world."
+  },
+  {
+    "category": "Boxing Seminar",
+    "date": "2025-02-10",
+    "title": "Sports Science Symposium",
+    "place": "Tokyo, Japan",
+    "description": "Explore the latest advancements in sports science and technology as applied to the sport of boxing. Join experts from around the globe for insightful discussions and practical demonstrations."
+  }
 ]

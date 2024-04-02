@@ -24,10 +24,13 @@ const TopNavbar = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
+      const sectionPosition =
+        section.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
-        top: section.offsetTop,
+        top: sectionPosition,
         behavior: "smooth",
       });
+      // toggleNavbarCollapse(); // Close navbar after clicking on a link
     }
   };
 

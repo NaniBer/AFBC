@@ -62,5 +62,53 @@
         "winner": "Abdoulaye Diallo"
       }
     ]
+  },
+  {
+    "description": "Southern African Boxing Showdown 2024",
+    "location": "Ellis Park Arena, Johannesburg, South Africa",
+    "date": "2024-07-15",
+    "time": "3:00 PM - 9:00 PM",
+    "matchups": [
+      {
+        "fighters": ["Mark Johnson", "Sophie Williams"],
+        "winner": "Sophie Williams"
+      },
+      {
+        "fighters": ["Peter Ndlovu", "Lindiwe Khumalo"],
+        "winner": "Peter Ndlovu"
+      }
+    ]
+  },
+  {
+    "description": "Central African Boxing Clash 2024",
+    "location": "Palais des Sports, Yaoundé, Cameroon",
+    "date": "2024-08-20",
+    "time": "6:00 PM - 11:00 PM",
+    "matchups": [
+      {
+        "fighters": ["Jean-Pierre Mbappe", "Christelle Ngo"],
+        "winner": "Jean-Pierre Mbappe"
+      },
+      {
+        "fighters": ["François Ngannou", "Sylvie Mabou"],
+        "winner": "François Ngannou"
+      }
+    ]
+  },
+  {
+    "description": "North African Boxing Rumble 2024",
+    "location": "Palais des Sports El Menzah, Tunis, Tunisia",
+    "date": "2024-09-25",
+    "time": "4:00 PM - 10:00 PM",
+    "matchups": [
+      {
+        "fighters": ["Ali Hassan", "Fatima Abdelrahman"],
+        "winner": "Fatima Abdelrahman"
+      },
+      {
+        "fighters": ["Youssef Mahmoud", "Leila Ahmed"],
+        "winner": "Youssef Mahmoud"
+      }
+    ]
   }
 ]

@@ -1,56 +1,62 @@
 [
-    {
-        "title": "Code of Conduct",
-        "description": "Our Code of Conduct outlines the expected behavior for all members of our community. It ensures a safe, respectful, and inclusive environment for everyone.",
-        "last_update": "2024-02-12"
-    },
-    {
-        "title": "Rules and Regulations",
-        "description": "Our Rules and Regulations provide guidelines and standards for participation in our activities. They help maintain fairness, integrity, and compliance within our organization.",
-        "last_update": "2024-02-14"
-    },
-
-    {
-        "title": "Membership Guidelines",
-        "description": "The Membership Guidelines outline the requirements and benefits of becoming a member of the boxing federation. It covers eligibility criteria, membership categories, and privileges.",
-        "last_update": "2024-02-20"
-    },
-    {
-        "title": "Competition Rules",
-        "description": "The Competition Rules detail the rules and regulations governing boxing competitions organized by the federation. It includes information on weight classes, scoring criteria, and safety protocols.",
-        "last_update": "2024-02-21"
-    },
-    {
-        "title": "Anti-Doping Policy",
-        "description": "The Anti-Doping Policy outlines the federation's stance on doping in sports and outlines the procedures for testing and consequences for doping violations.",
-        "last_update": "2024-02-22"
-    },
-    {
-        "title": "Coach and Official Certification",
-        "description": "The Coach and Official Certification document provides information on the certification process for boxing coaches and officials. It includes training requirements and accreditation criteria.",
-        "last_update": "2024-02-23"
-    },
-    {
-        "title": "Medical Guidelines",
-        "description": "The Medical Guidelines detail the medical requirements and protocols for boxers participating in federation-sanctioned events. It covers pre-fight medical examinations and injury management procedures.",
-        "last_update": "2024-02-24"
-    },
-    {
-        "title": "Event Hosting Guidelines",
-        "description": "The Event Hosting Guidelines outline the procedures and requirements for hosting boxing events under the federation's jurisdiction. It includes venue standards, event promotion, and logistical considerations.",
-        "last_update": "2024-02-25"
-    },
-    {
-        "title": "Disciplinary Procedures",
-        "description": "The Disciplinary Procedures document explains the disciplinary procedures and sanctions for athletes, coaches, and officials found to have violated federation rules or engaged in misconduct.",
-        "last_update": "2024-02-26"
-    },
-    {
-        "title": "Insurance Coverage",
-        "description": "The Insurance Coverage document provides information on insurance coverage available to members, athletes, and officials participating in federation activities. It includes liability and medical insurance.",
-        "last_update": "2024-02-27"
-    }
-
-
-
+  {
+    "id": 1,
+    "title": "Code of Conduct",
+    "description": "Our Code of Conduct outlines the expected behavior for all members of our community. It ensures a safe, respectful, and inclusive environment for everyone.",
+    "last_update": "2024-02-12"
+  },
+  {
+    "id": 2,
+    "title": "Rules and Regulations",
+    "description": "Our Rules and Regulations provide guidelines and standards for participation in our activities. They help maintain fairness, integrity, and compliance within our organization.",
+    "last_update": "2024-02-14"
+  },
+  {
+    "id": 3,
+    "title": "Membership Guidelines",
+    "description": "The Membership Guidelines outline the requirements and benefits of becoming a member of the boxing federation. It covers eligibility criteria, membership categories, and privileges.",
+    "last_update": "2024-02-20"
+  },
+  {
+    "id": 4,
+    "title": "Competition Rules",
+    "description": "The Competition Rules detail the rules and regulations governing boxing competitions organized by the federation. It includes information on weight classes, scoring criteria, and safety protocols.",
+    "last_update": "2024-02-21"
+  },
+  {
+    "id": 5,
+    "title": "Anti-Doping Policy",
+    "description": "The Anti-Doping Policy outlines the federation's stance on doping in sports and outlines the procedures for testing and consequences for doping violations.",
+    "last_update": "2024-02-22"
+  },
+  {
+    "id": 6,
+    "title": "Coach and Official Certification",
+    "description": "The Coach and Official Certification document provides information on the certification process for boxing coaches and officials. It includes training requirements and accreditation criteria.",
+    "last_update": "2024-02-23"
+  },
+  {
+    "id": 7,
+    "title": "Medical Guidelines",
+    "description": "The Medical Guidelines detail the medical requirements and protocols for boxers participating in federation-sanctioned events. It covers pre-fight medical examinations and injury management procedures.",
+    "last_update": "2024-02-24"
+  },
+  {
+    "id": 8,
+    "title": "Event Hosting Guidelines",
+    "description": "The Event Hosting Guidelines outline the procedures and requirements for hosting boxing events under the federation's jurisdiction. It includes venue standards, event promotion, and logistical considerations.",
+    "last_update": "2024-02-25"
+  },
+  {
+    "id": 9,
+    "title": "Disciplinary Procedures",
+    "description": "The Disciplinary Procedures document explains the disciplinary procedures and sanctions for athletes, coaches, and officials found to have violated federation rules or engaged in misconduct.",
+    "last_update": "2024-02-26"
+  },
+  {
+    "id": 10,
+    "title": "Insurance Coverage",
+    "description": "The Insurance Coverage document provides information on insurance coverage available to members, athletes, and officials participating in federation activities. It includes liability and medical insurance.",
+    "last_update": "2024-02-27"
+  }
 ]

@@ -12,8 +12,12 @@
     "react": ">=16.0.0",
     "react-datetime": "3.2.0",
     "react-dom": ">=16.0.0",
+    "react-intersection-observer": "^9.8.1",
     "react-router-dom": "6.11.1",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
+    "react-scroll-motion": "^0.3.3",
+    "react-spring": "^9.7.3",
     "reactstrap": "8.10.0",
     "sass": "1.62.1"
   },
