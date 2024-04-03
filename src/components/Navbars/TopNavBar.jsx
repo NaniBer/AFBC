@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-
 import classnames from "classnames";
-
 import {
   Button,
   Collapse,
@@ -21,6 +19,7 @@ const TopNavbar = () => {
     setNavbarCollapse(!navbarCollapse);
     document.documentElement.classList.toggle("nav-open");
   };
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -40,7 +39,7 @@ const TopNavbar = () => {
         document.documentElement.scrollTop > 299 ||
         document.body.scrollTop > 299
       ) {
-        setNavbarColor("");
+        setNavbarColor("#1b2d7b");
       } else if (
         document.documentElement.scrollTop < 300 ||
         document.body.scrollTop < 300
@@ -55,8 +54,13 @@ const TopNavbar = () => {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
   return (
-    <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
+    <Navbar
+      className={classnames("fixed-top", navbarColor)}
+      expand="lg"
+      style={{ backgroundColor: "#1b2d7b" }}
+    >
       <Container>
         <div className="navbar-translate">
           <button
@@ -81,7 +85,7 @@ const TopNavbar = () => {
               <NavLink
                 data-placement="bottom"
                 onClick={() => scrollToSection("About")}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "white" }}
               >
                 <p>About</p>
               </NavLink>
@@ -90,7 +94,7 @@ const TopNavbar = () => {
               <NavLink
                 data-placement="bottom"
                 onClick={() => scrollToSection("News")}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "white" }}
               >
                 <p>News</p>
               </NavLink>
@@ -99,7 +103,7 @@ const TopNavbar = () => {
               <NavLink
                 data-placement="bottom"
                 onClick={() => scrollToSection("Events")}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "white" }}
               >
                 <p>Events</p>
               </NavLink>
@@ -109,7 +113,7 @@ const TopNavbar = () => {
               <NavLink
                 data-placement="bottom"
                 onClick={() => scrollToSection("Results")}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "white" }}
               >
                 <p>Results</p>
               </NavLink>
@@ -118,7 +122,7 @@ const TopNavbar = () => {
               <NavLink
                 data-placement="bottom"
                 onClick={() => scrollToSection("Documentation")}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "white" }}
               >
                 <p>Documentation</p>
               </NavLink>
@@ -127,7 +131,7 @@ const TopNavbar = () => {
               <NavLink
                 data-placement="bottom"
                 onClick={() => scrollToSection("Boxers")}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", color: "white" }}
               >
                 <p>Notable boxers</p>
               </NavLink>

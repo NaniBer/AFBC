@@ -1,4 +1,5 @@
 import AboutData from "../backend Data/About.json";
+import leadershipHistory from "../backend Data/LeadershipHistory.json";
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 
@@ -30,6 +31,53 @@ const About = () => {
                 <p>{data.history}</p>
               </>
             )}
+            <br />
+            <br />
+            {leadershipHistory.length > 0 && (
+              <>
+                <div className="title text-center mb-5">
+                  <h2 className="font-weight-semibold">
+                    {" "}
+                    The committee of the African Boxing Confederation
+                  </h2>{" "}
+                </div>
+                {/* <h2 className="mt-5 font-weight-bold"></h2> */}
+                <ul>
+                  {leadershipHistory.map((period, index) => (
+                    <li key={index}>
+                      <strong className="font-weight-bold">
+                        {period.period}
+                      </strong>
+                      <ul>
+                        <li>
+                          <strong>President:</strong> {period.president}
+                        </li>
+                        {period.vicePresidents && (
+                          <li>
+                            <strong>Vice Presidents:</strong>{" "}
+                            {period.vicePresidents.join(", ")}
+                          </li>
+                        )}
+                        <li>
+                          <strong>General Secretary:</strong>{" "}
+                          {period.generalSecretary}
+                        </li>
+                        <li>
+                          <strong>Board Members:</strong>
+                          <ul>
+                            {period.boardMembers.map((member, index) => (
+                              <li key={index}>{member}</li>
+                            ))}
+                          </ul>
+                        </li>
+                      </ul>
+                      <br />
+                      <br />
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}{" "}
           </Col>
         </Row>
       </Container>
