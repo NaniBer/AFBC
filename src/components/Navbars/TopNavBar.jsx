@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import classnames from "classnames";
 import {
   Button,
@@ -12,11 +12,13 @@ import {
 } from "reactstrap";
 
 const TopNavbar = () => {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [navbarColor, setNavbarColor] = useState("navbar-transparent");
+  const [navbarCollapse, setNavbarCollapse] = useState(false);
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
+    // Toggle the navbar color based on the navbarCollapse state
+    setNavbarColor(navbarCollapse ? "navbar-transparent" : "");
     document.documentElement.classList.toggle("nav-open");
   };
 
@@ -29,7 +31,10 @@ const TopNavbar = () => {
         top: sectionPosition,
         behavior: "smooth",
       });
-      // toggleNavbarCollapse(); // Close navbar after clicking on a link
+      // Close navbar after clicking on a link
+      if (window.innerWidth <= 768) {
+        toggleNavbarCollapse();
+      }
     }
   };
 
@@ -39,27 +44,29 @@ const TopNavbar = () => {
         document.documentElement.scrollTop > 299 ||
         document.body.scrollTop > 299
       ) {
+        // Set the navbar color to a non-transparent color when scrolled
         setNavbarColor("#1b2d7b");
-      } else if (
-        document.documentElement.scrollTop < 300 ||
-        document.body.scrollTop < 300
-      ) {
+      } else {
+        // Set the navbar color to transparent when not scrolled
         setNavbarColor("navbar-transparent");
       }
     };
 
     window.addEventListener("scroll", updateNavbarColor);
 
-    return function cleanup() {
+    return () => {
       window.removeEventListener("scroll", updateNavbarColor);
     };
-  });
+  }, []);
 
   return (
     <Navbar
       className={classnames("fixed-top", navbarColor)}
       expand="lg"
-      style={{ backgroundColor: "#1b2d7b" }}
+      style={{
+        backgroundColor:
+          navbarColor === "navbar-transparent" ? "transparent" : "#1b2d7b",
+      }}
     >
       <Container>
         <div className="navbar-translate">
@@ -79,6 +86,8 @@ const TopNavbar = () => {
           className="justify-content-end"
           navbar
           isOpen={navbarCollapse}
+          onEntering={() => setNavbarColor("")}
+          onExited={() => setNavbarColor("navbar-transparent")}
         >
           <Nav navbar>
             <NavItem>
